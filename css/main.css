@@ -97,7 +97,158 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+  html {
+    box-sizing: border-box;
+  }
+  *,*:before,*:after {
+    box-sizing: inherit;
+  }
+  body {
+    background-color: #f2f2f2;
+    font-family: 'Open Sans', sans-serif;
+  }
+  /**Globales**/
+  .contenedor {
+    width: 98%;
+    margin: 0 auto;
+  }
+  @media only screen and (min-width:480px) {
+    .contenedor {
+      width: 95%;
+    }
+  }
+  @media only screen and (min-width:768px) {
+    .contenedor {
+      width: 90%;
+    }
+  }
+  @media only screen and (min-width:992px) {
+    .contenedor {
+      width: 90%;
+      max-width: 1100px;
+    }
+  }
+  /**header**/
+  div.hero {
+    background-image: url(../img/hokusai_1920-1200.jpg);
+    height: 100vh;
+    background-position: top center;
+    background-size: cover;
+  }
+  div.contenido-header {
+    padding-top: 40px;
+    text-align: center;
+  }
+  @media only screen and (min-width:768px) {
+    div.contenido-header {
+      padding-top: 10px;
+      
+    }
+  }
+  div.inscripcion {
+    font-size: 5.9vw;
+    text-transform: uppercase;
+    font-family: 'PT Sans', sans-serif;
+  }
+  @media only screen and (min-width:768px) {
+    div.inscripcion {
+      font-size: 6vw;
+      margin: 0;
+      line-height: 1;
+    }
+  }
+  /*barra*/
+  div.barra {
+    background-color: #353535;
+    padding: 20px 0;
+  }
+  .fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  div.logo{
+    width: 80%;
+    float: left;
+  }
+  div.logo img {
+    width: 100%;
+  }
+  @media only screen and (min-width:768px) {
+    div.logo {
+      width:33%;
+  
+    }
+  }
+  /** Nav principal **/
+nav.nav-principal {
+  display: none;
+  width: 100%;
+}
+nav.nav-principal a {
+   font-family: 'Oswald', sans-serif;
+   color: #ffffff;
+   font-size: 1.3em;
+   text-transform: uppercase;
+   text-decoration: none;
+   transition: all .6s ease;
+   width: 100%;
+   display: block;
+   text-align: center;
+   margin-bottom: 20px;
+   clear: both;
+}
+nav.nav-principal a:hover {
+  background-color: #fe4918;
+}
+nav.nav-principal a:last-child {
+  border: 2px solid #fe4918;
+  color: #fe4918;
+}
+nav.nav-principal a:last-child:hover {
+  color: #ffffff;
+}
+@media only screen and (min-width:768px) {
+  nav.nav-principal {
+    width: 67%;
+    float: right;
+    text-align: right;
+    display: block;
+  }
+  nav.nav-principal a {
+    padding: 10px 10px;
+    width:auto;
+    display: inline-block;
+    text-align: center;
+    margin:0 10px 0 0;
+  }
+}
+div.menu-movil {
+    width: 60px;
+    display: block;
+    float: right;
+    text-align: right;
+    margin-top: 12px;
+}
 
+div.menu-movil:hover {
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+    div.menu-movil {
+        display: none;
+    }
+}
+
+div.menu-movil span{
+    height: 8px;
+    margin-bottom: 6px;
+    background-color: white;
+    display: block; 
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
