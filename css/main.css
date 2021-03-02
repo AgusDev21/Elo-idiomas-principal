@@ -136,12 +136,13 @@ textarea {
     background-size: cover;
   }
   div.contenido-header {
-    padding-top: 40px;
+    padding-top: 180px;
     text-align: center;
+    text-decoration: none;
   }
   @media only screen and (min-width:768px) {
     div.contenido-header {
-      padding-top: 10px;
+      padding-top: 120px;
       
     }
   }
@@ -149,17 +150,22 @@ textarea {
     font-size: 5.9vw;
     text-transform: uppercase;
     font-family: 'PT Sans', sans-serif;
+    
+  }
+  div.inscripcion a {
+    text-decoration: none;
   }
   @media only screen and (min-width:768px) {
     div.inscripcion {
       font-size: 6vw;
       margin: 0;
       line-height: 1;
+      
     }
   }
   /*barra*/
   div.barra {
-    background-color: #353535;
+    background-color: rgba(83, 139, 179, .5);
     padding: 20px 0;
   }
   .fixed {
@@ -170,11 +176,11 @@ textarea {
     z-index: 2;
   }
   div.logo{
-    width: 80%;
+    width: 60%;
     float: left;
   }
   div.logo img {
-    width: 100%;
+    width: 40%;
   }
   @media only screen and (min-width:768px) {
     div.logo {
@@ -189,7 +195,7 @@ nav.nav-principal {
 }
 nav.nav-principal a {
    font-family: 'Oswald', sans-serif;
-   color: #ffffff;
+   color: #fe4918;
    font-size: 1.3em;
    text-transform: uppercase;
    text-decoration: none;
@@ -201,10 +207,10 @@ nav.nav-principal a {
    clear: both;
 }
 nav.nav-principal a:hover {
-  background-color: #fe4918;
+  background-color: #1827fe;
 }
 nav.nav-principal a:last-child {
-  border: 2px solid #fe4918;
+  border: 2px solid #1827fe;
   color: #fe4918;
 }
 nav.nav-principal a:last-child:hover {
