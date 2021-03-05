@@ -1,11 +1,21 @@
-const readMoreBtn = document.querySelector('.readMoreBtn');
-const text = document.querySelector('.text');
+const contador = document.querySelectorAll('.counter');
+const speed = 500;
 
-readMoreBtn.addEventListener('click',(e)=>{
-  text.classList.toggle('show-more');
-  if(readMoreBtn.innerText === 'Read More'){
-    readMoreBtn.innerText = 'Read Less';
-  }else{
-    readMoreBtn.innerText = 'Read More';
-  }
-})
+
+contador.forEach(counter => {
+  const updateCount = () => {
+    const target = +counter.getAttribute('data-target');
+    const count = +counter.innerText;
+    const inc = target / speed;
+    if (count < target) {
+			counter.innerText = count + inc;
+			
+			setTimeout(updateCount, 1);
+		} else {
+			counter.innerText = target;
+		}
+  };
+
+  updateCount();
+});
+
