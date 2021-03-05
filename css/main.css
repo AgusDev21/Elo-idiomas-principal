@@ -279,106 +279,55 @@ ul.lista-idiomas li {
 }
 @media only screen and (min-width:480px) {
   ul.lista-idiomas li  {
-    width: 100%;
+    width: 50%;
   }
 }
 @media only screen and (min-width:768px) {
   ul.lista-idiomas li  {
-    width: 50%;
+    width: 25%;
   }
 }
 div.idioma {
   position: relative;
-  overflow: hidden;
-  height: auto;
+  overflow: hidden; 
 }
-div.invitado img {
+div.idioma img {
   max-width: 100%;
+  filter:rgb(11, 48, 128);
+  -webkit-filter: grayscale(1);
+  -webkit-transition: all .5s ease-in-out;
 }
-/*boton-vermas*/
-div.boton-ver {
-  width: 40%;
-  margin: 0 auto;
-  background: rgba(11, 7, 196, 0.2);
-  padding: 35px;
-  border: 2px solid #fff;
-  border-radius: 20px/50px;
-  background-clip: padding-box;
-  text-align: center;
+div.idioma:hover img {
+  -webkit-filter: grayscale(0);
+  -webkit-transform: scale(1.1);
 }
-
-.ver-mas {
-  font-size: 1em;
-  padding: 10px;
-  color: #fff;
-  border: 2px solid #140263;
-  border-radius: 20px/50px;
-  text-decoration: none;
-  cursor: pointer;
-  transition: all 0.3s ease-out;
-}
-.ver-mas:hover {
-  background: #0e0774;
-}
-
-.overlay {
+div.idioma p {
   position: absolute;
-  top: 0;
   bottom: 0;
   left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  transition: opacity 500ms;
-  visibility: hidden;
+  padding: 15px 10px;
+  margin: 0;
+  background-color: rgba(9, 4, 85, 0.55);
+  width: 100%;
+  text-align: left;
+  font-family: 'Oswald', sans-serif;
+  color: #fe4918;
+  text-transform: uppercase;
+-webkit-transition: all .5s ease-in-out;
+}
+div.idioma:hover p {
+  bottom: -80px;
   opacity: 0;
 }
-.overlay:target {
-  visibility: visible;
-  opacity: 1;
-}
-
-.info {
-  margin: 70px auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 5px;
-  width: 30%;
-  position: relative;
-  transition: all 5s ease-in-out;
-}
-
-.info h2 {
-  margin-top: 0;
-  color: #333;
-  font-family: Tahoma, Arial, sans-serif;
-}
-.info .cerrar {
+.parallax::before {
+  width: 100%;
+  height: 100%;
   position: absolute;
-  top: 20px;
-  right: 30px;
-  transition: all 200ms;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #333;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.info .close:hover {
-  color: #06D85F;
-}
-.info .contenido {
-  max-height: 30%;
-  overflow: auto;
-}
-
-@media screen and (max-width: 700px){
-  .ver-mas{
-    width: 70%;
-  }
-  .info{
-    width: 70%;
-  }
-}
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
