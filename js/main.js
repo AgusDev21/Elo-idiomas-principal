@@ -1,5 +1,5 @@
 const contador = document.querySelectorAll('.counter');
-const speed = 500;
+const speed = 1000;
 
 
 contador.forEach(counter => {
